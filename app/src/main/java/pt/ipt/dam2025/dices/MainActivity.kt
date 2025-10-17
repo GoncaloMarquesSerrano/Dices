@@ -52,6 +52,7 @@ private fun MainActivity.diceRoll() {
      2 - determinar a imagem a mostrar em função do número gerado
      3- mostrar imagem
      4 - atualizar o texto
+     5 - atualizar o valor por extenso correspondente ao número gerado
      */
 
     // 1
@@ -73,4 +74,19 @@ private fun MainActivity.diceRoll() {
 
     // 4
     binding.txtViewValueDice.text = randomNumber.toString()
+
+    // 5
+    val numberText: Int = when(randomNumber){
+        1 -> R.string.n1
+        2 -> R.string.n2
+        3 -> R.string.n3
+        4 -> R.string.n4
+        5 -> R.string.n5
+        6 -> R.string.n6
+        else -> R.string.n
+    }
+
+    // atribuir texto à label
+    val txt = getString(numberText)
+    binding.txtViewValueDiceExtense.text = " ($txt)"
 }
