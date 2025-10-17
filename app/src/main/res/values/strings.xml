@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Dices</string>
+    <string name="dice_name">Simulador lançamento de dado</string>
+    <string name="dice_image_name">Imagem do dado</string>
+    <string name="btn_dice_roll">Rodar</string>
+    <string name="dice_value">6</string>
 </resources>
